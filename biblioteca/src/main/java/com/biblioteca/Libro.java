@@ -7,6 +7,8 @@ public class Libro {
     protected int numeroEjemplares;
     protected int numeroPrestados;
 
+    public Libro() {
+    }
     public Libro(String titulo, String autor, int numeroEjemplares) {
         this.titulo = titulo;
         this.autor = autor;
@@ -26,7 +28,6 @@ public class Libro {
     }
 
     public boolean devolucion() {
-
         if (numeroPrestados > 0) {
             numeroPrestados--;
             return true;
@@ -34,10 +35,6 @@ public class Libro {
             return false;
         }
 
-    }
-
-    public int calcularDisponibles() {
-        return numeroEjemplares - numeroPrestados;
     }
 
 }
