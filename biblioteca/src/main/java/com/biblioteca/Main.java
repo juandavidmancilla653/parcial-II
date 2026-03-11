@@ -8,7 +8,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        Libro libro1 = new Libro("Programación Java", "Juan Perez", 5);
+        Libro libro1 = new Libro("como Programación enJava", "Juan ", 5);
 
         Libro libro2 = new Libro();
 
